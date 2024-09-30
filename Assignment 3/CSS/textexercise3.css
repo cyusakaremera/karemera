@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Coach Kevin</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Internal CSS -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Left Sidebar */
+        .left-sidebar {
+            width: 80px; 
+            background-color: #333;
+            height: 100vh;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 260px;
+        }
+
+        .left-sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .left-sidebar a:hover {
+            background-color: #555;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-image: url('images/background2.png');
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo img {
+            width: 40px;
+        }
+
+        nav .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        nav .menu li {
+            margin-right: 20px;
+        }
+
+        nav .menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav .auth-buttons a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav .auth-buttons .cta-button {
+            background-color: #FFA500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Services Section */
+        .services-section {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 150px; /* Adjusted for the fixed header */
+        }
+
+        .services-section h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .service {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .service img {
+            width: 40%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .service-description {
+            padding: 20px;
+            width: 60%;
+        }
+
+        .service-description h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .service-description p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .service {
+                flex-direction: column;
+            }
+
+            .service img {
+                width: 100%;
+                border-radius: 8px 8px 0 0;
+            }
+
+            .service-description {
+                width: 100%;
+            }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        /* Bottom Navbar */
+        .bottom-navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottom-navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .bottom-navbar ul li {
+            margin: 0 15px;
+        }
+
+        .bottom-navbar ul li a img {
+            width: 40px;
+            height: auto;
+        }
+
+        .bottom-navbar ul li a:hover img {
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+        <a href="assignment1.html">Assignment1</a>
+        <a href="assignment2.html">Assignment2</a>
+        <a href="assignment3.html">Assignment3</a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Coach Kevin Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="suggestions.html">Suggestions</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="signup.html">Sign In</a>
+                <a href="signup.html" class="cta-button">Get Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <div class="services-section">
+        <h1>Our Services</h1>
+
+        <!-- Example Service -->
+        <div class="service">
+            <img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\images\ser1.png" alt="Strength Training">
+            <div class="service-description">
+                <h2>Strength Training</h2>
+                <p>Strength training focuses on building muscle and enhancing endurance. It involves exercises like squats, deadlifts, and bench presses. Personalized plans are available based on your fitness level and goals.</p>
+            </div>
+        </div>
+        
+        <!-- Add more services similarly here -->
+    </div>
+
+    <!-- Bottom Navbar -->
+    <div class="bottom-navbar">
+        <ul>
+            <li><a href="https://www.facebook.com/"><img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\images\facebook-logo.webp" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\images\insta-logo.png" alt="Instagram"></a></li>
+            <li><a href="https://www.twitch.tv/"><img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\images\twitch-logo.webp" alt="Twitch"></a></li>
+            <li><a href="https://www.youtube.com/"><img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\images\youtube-logo.png" alt="YouTube"></a></li>
+            <li><a href="https://x.com/"><img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\images\twitter-logo.avif" alt="Twitter"></a></li>
+            <li><a href="https://accounts.snapchat.com/"><img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\images\Snapchat-Logo.png" alt="Snapchat"></a></li>
+            <li><a href="https://www.tiktok.com/"><img src="C:\Users\CTRL-SHIFT Ltd\Desktop\web pacrtice\images\tiktok-logo.png" alt="TikTok"></a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Kevin | Personal Trainer</p>
+    </footer>
+</body>
+</html>
